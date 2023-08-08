@@ -1,0 +1,36 @@
+
+
+  <title>welcome</title>
+  
+  <link rel='stylesheet' type='text/css' media='screen' href='home.component.css'>
+  
+
+<div class="main">
+  <div class="navbar">
+      <ul>
+       
+          <li><button routerLink="/student">Student page</button></li>
+     
+    </ul>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<h2 style="text-align: center;">{{title}}</h2>
+<br>
+
+<h3 style="text-align: center;">Welcome To Home page</h3>
+<br>
+<br>
+<!--<input placeholder="type" type="text" (keyup)="myText($event.target)"/>-->
+<br>
+<div style="text-align: center;">
+&nbsp; &nbsp;<input placeholder="Type" type="text" [(ngModel)]='currentVal'/>
+<br>
+&nbsp; &nbsp; <h3>&nbsp;{{currentVal}}</h3>
+</div>
+<!--<h3>{{ourtext}}</h3>-->
+
+<br>
+

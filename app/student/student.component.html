@@ -1,0 +1,62 @@
+
+    <link rel='stylesheet' type='text/css' media='screen' href='student.component.css'>
+
+<div class="main">
+    <div class="navbar">
+        <ul>
+         
+            <li><button routerLink="">Home page</button></li>
+       
+      </ul>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-10 col-md-6 mx-auto">
+
+        <div class="card">
+            <div class="card-header">
+                <h5>student detail</h5>
+            </div>
+            <div class="card-body">
+                <div class="" *ngFor="let item of studentdetail">
+                    <span>name : {{item.name}} <span> ( {{item.email}} ) <span> ( {{item.mark}} )</span> </span> </span> <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-10 col-md-6 mx-auto mt-4">
+
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>mark</th>
+                        <th>pass/fail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of studentdetail" [ngClass]="{ 'fail': item.mark >50, 'pass': item.mark >= 50 }">
+                        <td>{{item.name}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.mark}}</td>
+                        <td  *ngIf="item.mark >= 50"><span class="pass-badge">PASS</span></td>
+                        <td *ngIf="item.mark < 50" ><span class="fail-badge">FAIL</span></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+    </div>
+</div>

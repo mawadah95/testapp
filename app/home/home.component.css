@@ -1,0 +1,32 @@
+
+.main {
+    list-style-type: none;
+    margin: -1%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+height: 75px;
+    }
+    
+    li {
+    float: left;
+    }
+    
+    li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    }
+    
+    li button:hover {
+    background-color:  #30CFC0;
+    }
+    button{
+        padding:  10px 20px;
+        border-radius: 12px;
+        margin:-2px  -25px;
+        cursor: pointer;
+    
+    }
